@@ -1,0 +1,9 @@
+{
+
+   "start_mirroring": {
+      "message": "Cermin Nyala"
+   },
+   "stop_mirroring": {
+      "message": "Cermin Mati"
+   }
+}

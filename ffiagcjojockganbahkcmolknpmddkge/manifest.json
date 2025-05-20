@@ -1,0 +1,84 @@
+{
+   "app": {
+      "background": {
+         "scripts": [
+            "thing/background/bundle.js",
+            "thing/background/predefine.js",
+            "thing/background/utils.js",
+            "thing/background/udpSocket.js",
+            "thing/background/tcpSocket.js",
+            "thing/background/tcpServer.js",
+            "thing/background/httpServer.js",
+            "thing/background/ssdp.js",
+            "thing/background/jsonHandler.js",
+            "thing/background/emirroring.js",
+            "thing/background/captureScreen.js",
+            "thing/background/projector.js",
+            "thing/background/remoteControl.js",
+            "thing/background/mediaPlaylist.js",
+            "thing/background/tvMirror.js",
+            "thing/background/jpgPackets.js",
+            "thing/background/mediaStreaming.js",
+            "thing/background/background.js"
+         ],
+         "presistent": false
+      }
+   },
+   "author": "Unplug’d",
+   "default_locale": "en",
+   "description": "Unplug’d",
+   "icons": {
+      "128": "thing/images/appicon_128.png",
+      "16": "thing/images/appicon_16.png",
+      "32": "thing/images/appicon_32.png",
+      "48": "thing/images/appicon_48.png"
+   },
+   "manifest_version": 2,
+   "name": "Unplug’d",
+   "permissions": [
+      "\u003Call_urls>",
+      "notifications",
+      "clipboardRead",
+      "clipboardWrite",
+      "browser",
+      "desktopCapture",
+      "contextMenus",
+      "videoCapture",
+      "audioCapture",
+      "audio",
+      "INTERNAL_SPEAKER",
+      "system.network",
+      "system.display",
+      "geolocation",
+      "webview",
+      "storage",
+      "identity",
+      "app.window.alwaysOnTop",
+      "http://*/",
+      "networking.config",
+      "system.network"
+   ],
+   "product": "Unplug’d",
+   "sockets": {
+      "tcp": {
+         "connect": "*:*"
+      },
+      "udp": {
+         "bind": [
+            "*:*"
+         ],
+         "joinGroup": "*",
+         "multicastMembership": "",
+         "send": [
+            "*:*"
+         ]
+      },
+      "tcpServer": {
+         "listen": [
+            "*:*"
+         ]
+      }
+   },
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "7.4.0109"
+}

@@ -1,0 +1,61 @@
+<html>
+
+<head>
+    <title>Unplug’d</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="stylesheet" href="css\all.css">
+    <script src="js\jquery_1.11.0.min.js"></script>
+    <script src="js\bootstrap.min.js"></script>
+    <script src='js\mirror-1.js'></script>
+</head>
+
+<body style="background:white;padding:0;margin:0;" id="returnbody">
+    <div id="titleBar" class="main_sidebar main_sidebar_color" style="float: left;">
+        <div id="header_image">
+            <dl>
+                <!-- <dt>
+                    <img src="images/appicon_32.png" />Unplug’d
+                </dt> -->
+                <dd style="margin-top:5px;">
+                    <a id="minimized" href="#"></a>
+                    <a id="close" href="#"></a>
+                </dd>
+            </dl>
+        </div>
+    </div>
+    <div id="imgBox" style="position: absolute;width: 100%; top:40px; bottom: 0px;">
+        <img id="returnsimg" style="position: absolute;top:0;left:0;" src="images/while.png" class="noData" />
+        <div id="returnsimgzhe" style="position: absolute;top:0;left:0;background:red;"></div>
+        <img id="controlBarButton"
+            style="position: absolute;top:50%;right: 0px;transform:translate(0,-50%);width: 50px;"
+            src="images/icon_arrow_left.png">
+        <div id="controlBar"
+            style="background:rgba(0,0,0,0.2); position: absolute;top:50%;right:-100px;transform:translate(0,-50%)">
+
+            <img id="homeButton" src="imageMirror/icon_home_right_panel.png">
+            <img id="backButton" src="images/icon_right_panel_back.png">
+            <img id="colorButton" src="imageMirror/icon_right_panel_pen.png">
+            <img id="clearButton" src="imageMirror/icon_delete.png">
+            <img id="getControlBarButton" src="imageMirror/icon_arrow_right.png">
+            <!--<img id="setcolorButton" src="images/icon_home_right_panel.png">
+                <img id="setsizeButton" src="images/icon_home_right_panel.png">-->
+        </div>
+        <img id="fullscreen" style="background:blue;position:absolute;top:15px;right:15px;width:30px;height: 30px;"
+            src="images/menu_fullscreen.png">
+    </div>
+    <div id="displaytext">
+        <div id="displaytext_Ctitle">
+            <b></b>
+        </div>
+        <div id="displaytext_Ccontext">
+            <p><span></span></p>
+        </div>
+
+        <div id="displaytext_Cbutton">
+            <div id="displaytext_Cyes"></div>
+        </div>
+    </div>
+</body>
+<script src="js\mirror-2.js"></script>
+
+</html>

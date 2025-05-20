@@ -1,0 +1,47 @@
+{
+   "start_mirroring": {
+      "message": "開始傳屏"
+   },
+   "tv_mirror": {
+      "message": "螢幕鏡像"
+   },
+   "stop_mirroring": {
+      "message": "關闭傳屏"
+   },
+   "connectdevice": {
+      "message": "選擇設備"
+   },
+   "device_name": {
+      "message": "設備名稱"
+   },
+   "adress_ip": {
+      "message": "IP地址"
+   },
+   "connect_immediately": {
+      "message": "立即連接"
+   },
+   "already_connect_device": {
+      "message": "已連接到："
+   },
+   "discontent": {
+      "message": "斷開連接"
+   },
+   "already_strat": {
+      "message": "準備就緒"
+   },
+   "loading": {
+      "message": "正在搜尋"
+   },
+   "network": {
+      "message": "未發現接收設備，請檢測網絡連接"
+   },
+   "password": {
+      "message": "请输入密码"
+   },
+   "passworderror": {
+      "message": "密码错误，请重新输入"
+   },
+   "Submit": {
+      "message": "提交"
+   }
+}

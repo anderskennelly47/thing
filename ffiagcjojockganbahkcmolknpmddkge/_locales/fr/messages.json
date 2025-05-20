@@ -1,0 +1,83 @@
+{
+   "start_mirroring": {
+      "message": "Partager écran"
+   },
+   "tv_mirror": {
+      "message": "Miroir du bureau"
+   },
+   "stop_mirroring": {
+      "message": "Arrêter le partage"
+   },
+   "connectdevice": {
+      "message": "Liste des appareils"
+   },
+   "device_name": {
+      "message": "Nom de l'appareil"
+   },
+   "adress_ip": {
+      "message": "Adresse IP"
+   },
+   "connect_immediately": {
+      "message": "Connecter"
+   },
+   "already_connect_device": {
+      "message": "Connecté à l'appareil"
+   },
+   "discontent": {
+      "message": "Déconnecter"
+   },
+   "already_strat": {
+      "message": "Prêt à diffuser"
+   },
+   "loading": {
+      "message": "Chargement"
+   },
+   "network": {
+      "message": "Impossible de trouver un récepteur. Veuillez vérifier la connexion réseau"
+   },
+   "password": {
+      "message": "Saisir mot de passe"
+   },
+   "passworderror": {
+      "message": "Mot de passe incorrect"
+   },
+   "Submit": {
+      "message": "Transmettre"
+   },
+   "loadingmirroring": {
+      "message": "Attente de l'autorisation de partage"
+   },
+   "cancel": {
+      "message": "Annuler"
+   },
+   "refusemirroring": {
+      "message": "La demande de partage a été refusée"
+   },
+   "requesttimeout": {
+      "message": "Délai de la demande expiré"
+   },
+   "placeholder": {
+      "message": "Connecter avec code PIN"
+   },
+   "passwordpinerror": {
+      "message": "Erreur PIN"
+   },
+   "eshareName": {
+      "message": "vCast"
+   },
+   "ethernet": {
+      "message": "Ethernet"
+   },
+   "loading_text": {
+      "message": "Cliquez pour saisir le code PIN pour la diffusion croisée sur le sous-réseau si vous n'avez pas trouvé le nom de votre appareil dans la liste"
+   },
+   "prompt": {
+      "message": "Pointe"
+   },
+   "setChromeName": {
+      "message": "Veuillez entrer le nom d'utilisateur"
+   },
+   "Determine": {
+      "message": "OK"
+   }
+}
