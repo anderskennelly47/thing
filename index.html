@@ -1,0 +1,311 @@
+<html>
+
+<head>
+	<title>Unplug’d</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<link rel="stylesheet" href="css\all.css">
+	<script src="js\jquery_1.11.0.min.js"></script>
+	<script src="js\bootstrap.min.js"></script>
+	<script src='js\index-1.js'></script>
+</head>
+
+<body>
+	<div id="containers">
+		<div id="header_image">
+			<dl>
+				<dt>
+					Unplug’d
+				</dt>
+				<dd style="margin-top:5px;">
+					<a id="minimize" href="#"></a>
+					<a id="close" href="#"></a>
+				</dd>
+			</dl>
+		</div>
+		<div id="inputChromeAccount" tabindex="20" role="dialog" aria-labelledby="myModalLabel">
+			<div id="heChromeAccount">
+				<div id="promptChrome">
+					<div id="close_account"></div>
+				</div>
+				<div id="account_image"></div>
+				<h4></h4>
+				<p></p>
+				<input type="text" id="ChromeAccount" placeholder="" value="" maxlength="13" autofocus />
+				<span id="name_p"></span>
+				<div id="account_button">
+					<div id="account_button_cancel"></div>
+					<div id="buttonChromeAccount"></div>
+				</div>
+			</div>
+		</div>
+		<!--about EShare-->
+		<div id="about_app_div" tabindex="20" role="dialog" aria-labelledby="myModalLabel">
+			<div id="about_app">
+				<div id="about_header">
+					<span></span>
+					<div id="about_header_close"></div>
+				</div>
+				<div id="about_logo"></div>
+				<p id="about_name">Unplug’d</p>
+				<p id="about_version">v7.4.0109</p>
+				<!--<div id="about_version_update"></div>-->
+				<div id="about_version_info">
+					<p style="margin-bottom: 3px;">
+						<!--<span></span>&nbsp;&nbsp;|&nbsp;&nbsp;<span></span>-->
+					</p>
+					<p style="margin-bottom: 0px;"></p>
+					<p><a href="http://www.boxlight.com" target="view_window">www.boxlight.com</a></p>
+				</div>
+			</div>
+		</div>
+		<div id="device_list_container"
+			style="position:relative;text-align:center;background:white;box-sizing: border-box;-webkit-box-sizing:border-box;">
+			<!-- class="viewHide" -->
+			<div id="refreshbtn"></div>
+			<div class="header DeviceListTitle"> </div>
+			<!--这是搜索设备时的div块-->
+			<div class="loading_header remove_loading">
+				<div id="loading" class="loading"></div>
+				<div id="loading_text"></div>
+				<div id="loading_network_info"></div>
+				<dl>
+					<dt></dt>
+					<dd></dd>
+				</dl>
+			</div>
+			<div id="taotable_div">
+				<div id="taotable">
+					<table class="list_table"></table>
+				</div>
+
+			</div>
+			<!--非专业版本提示-->
+			<div id="ipNotPro">
+
+				<p id="ipNotPro_p"></p>
+				<div id="ipNotPro_check"></div>
+
+			</div>
+			<!--非专业版本提示-->
+
+
+			<div id="father_button_id">
+				<dl>
+					<dt><input type="text" id="pinconnect" banInputMethod='1' placeholder="" maxlength="15"
+							spellcheck="false" style="ime-mode: disabled;" /></dt>
+					<dd>
+						<div id="pwdbybutton"></div>
+					</dd>
+				</dl>
+				<div style="clear: both;"></div>
+				<div id="ipInput_null"></div>
+			</div>
+
+			<div id="ipaddress">
+				<div id="bottom_div">
+					<div id="setting" class="settingTogerter"></div>
+					<div id="network_name"></div>
+				</div>
+
+				<!--<dl>-->
+				<!--<dt id="eshareName"></dt>-->
+				<!--<dd id="ethernet"></dd>
+						<dd id="localAddress"></dd>-->
+				<!--</dl>-->
+				<div id="device_name"
+					style="width:50%;position: fixed;bottom:20%;left: 25%;color:black;border:1px solid #cccccc;background:white;padding:5px 5px;display: none;">
+					<b id="device_name_headerb"></b>
+					<input type="text" id="device_name_input" maxlength="20"
+						style="display:block;margin: 0 auto;color: black;width:100%;border:1px solid #cccccc;text-align:center;" />
+					<p id="device_name_b" style="display: none;"></p>
+					<p id="device_name_wide_alert" style="display: none"></p>
+					<button id="device_name_button"
+						style="margin-top:10px;float:left;list-style-type: none;border-style: none;border-radius: 5px;background:#1884C4;color:white;margin-left: 30px;width: 50px;">
+					</button>
+					<button id="device_name_cancel"
+						style="margin-top: 10px;float:right;list-style-type: none;border-style: none;border-radius: 5px;background:#1884C4;color:white;margin-right: 30px;width: 50px;"></button>
+				</div>
+			</div>
+			<!--刷新按钮-->
+			<!--<div id="deviceListButtons">
+      <button type="button" id="btnRefresh"><img class="imgRefresh" src="images\ic_refresh_normal.png"/></button>
+    </div>     -->
+		</div>
+		<div id="main_container" class="top_border offline_mode">
+			<div class="main_sidebar main_sidebar_color" style="position: relative;">
+				<div id="Jurisdiction"
+					style="width:40%;position:absolute;left:30%;top:35%;background:#F0F0F0;border:1px solid #333333;display:none;">
+					<!--弹出框部分-->
+					<p style="text-align: center;margin-top:15%;color:black;" id="Jurisdictionp"></p>
+					<!--<div style="width:20%;height:30%;margin:0 auto;text-align: center;">取消</div>-->
+					<div id="cancel"
+						style="width:50px;height: 30px; margin:0 auto;text-align: center;line-height: 30px;background:#333333;margin-bottom:20px;color:white;border-radius:5px;">
+						取消</div>
+				</div>
+				<div class="div_header">
+					<dl>
+						<dt>
+							<div id="P_device"></div>
+							<div id="connect_info">
+								<span id="p_text"></span>
+								<br />
+								<span id="C_I_name"></span>
+							</div>
+							<div id="connect_image"></div>
+							<div style="clear: both;"></div>
+						</dt>
+						<dd id="div_home">
+							<div id="div_home_photo"></div>
+							<span id="div_home_text"></span>
+						</dd>
+						<dd id="div_home_image">
+							<div id="div_fullscreen_photo"></div>
+							<div id="div_fullscreen_text"></div>
+						</dd>
+					</dl>
+					<div style="clear: both;"></div>
+				</div>
+				<div class="div_cong" style="width:100%;margin:0 auto;">
+					<div class="div_show"></div>
+					<div id="share_screen">
+						<div id="btn_eshare" class="main_sidebar_item main_sidebar_color mainbtn">
+							<!-- <div class="col-xs-3 main_sidebar_icon"></div> --><span></span></div>
+						<div id="btn_eshare_two" class="mainbtn">
+							<div id="btn_eshare_two_suspend"></div>
+							<div id="bnt_eshare_two_contine"></div>
+						</div>
+						<div id="btn_Reverse_share" class="main_sidebar_item main_sidebar_color mainbtn">
+							<span>Mirror</span>
+						</div>
+						<div style="clear: both;"></div>
+					</div>
+
+					<!--<div id="returnScreen">return</div>  返回服务端投屏按钮-->
+					<div id="ResolvingPower" class="viewHide"
+						style="width:50%;height: 100px;margin:0 auto;margin-top: 10px;text-align: center;background: #C0C0C0;border-radius: 5px;color: black;padding:20px 10px 10px 10px;position:absolute;left: 25%;">
+						<p id="ResolvingPowerp" style="color: black;"></p>
+						<button id="CloseResolvingPower"></button>
+					</div>
+				</div>
+				<!--这里是主控界面开始的地方-->
+				<div id="main_control_index">
+					<div id="mci_header">
+						<span></span>
+						<div id="mci_header_close"></div>
+					</div>
+					<div id="mControl_middle">
+						<p>
+							<a>已有2台设备连接</a>
+						</p>
+						<div id="out_device_list">
+							<table id="out_device_table">
+								<tr>
+									<td>
+										<ul>
+											<li></li>
+											<li>wee</li>
+										</ul>
+									</td>
+									<td>
+										<ul>
+											<li></li>
+											<li></li>
+											<li></li>
+											<li></li>
+										</ul>
+									</td>
+								</tr>
+							</table>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!--主控模式下的弹窗-->
+			<div id="Cpermisson" style="background:rgba(0,0,0,0.2)">
+				<div id="Cpermisson_connect">
+					<div id="Ctitle">
+						<b>权限</b>
+					</div>
+					<div id="Ccontext">
+						<p>啦啦啦啦<span>名称</span></p>
+					</div>
+
+					<div id="Cbutton">
+						<div id="Cyes"></div>
+						<div id="Ccancel"></div>
+					</div>
+				</div>
+			</div>
+
+			<!-- Capture Screen? -->
+			<video id="shareVid" autoplay></video>
+			<canvas id="shareCanvas"></canvas>
+			<!-- Capture Screen? -->
+		</div>
+		<!-- 密码输入 -->
+		<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+			aria-hidden="true">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header" style="text-align: center;border-bottom: none;">
+						<!--<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>-->
+						<h4 class="modal-title" id="myModalLabel"></h4>
+					</div>
+					<div class="" style="text-align: center;font-size: 40px;position:relative;display: table;">
+						<input type="text" value="" class="upperletter"
+							style="width: 65%; min-width: 230px; height: 50px;text-align: center;" id="passwordinput"
+							banInputMethod='1' />
+						<p id="passwordPoint" style="min-height: 20px;"></p>
+					</div>
+					<div class="" style="text-align: center;margin-top:0px;padding-bottom: 20px;">
+						<button type="button" class="btn btn-cancel" data-dismiss="modal"
+							id="passwordbuttoncancel"></button>
+						<button type="button" class="btn btn-primary" id="passwordbutton"></button>
+					</div>
+				</div><!-- /.modal-content -->
+			</div><!-- /.modal -->
+		</div>
+		<div id="tteoor" style="display: none;"></div>
+		<div id="footer_navigation">
+			<div id="footer_navigation_setting" class="settingTogerter"></div>
+			<div id="footer_navigation_account"></div>
+			<div id="footer_navigation_file"></div>
+			<div id="footer_navigation_voice"></div>
+			<div id="setting_info_connect">
+				<ul id="setting_info_connect_ui">
+					<li></li>
+					<li hidden></li>
+					<li hideen>
+						<p><input type="checkbox" name="vehicle" value="" id="checkDb" />等比显示</p>
+						<p><input type="checkbox" name="vehicle" value="" checked="checked" id="checkDk" />全屏显示</p>
+					</li>
+					<li></li>
+				</ul>
+			</div>
+		</div>
+		<div id="local_ip">
+			<table id="local_ip_table">
+
+			</table>
+		</div>
+	</div>
+	<div id="ipErrordiv">
+		<div id="ipErrordiv_box">
+			<div id="ipErrordiv_img"></div>
+			<p></p>
+			<a id="ipErrordiv_a"></a>
+		</div>
+	</div>
+	<div id="ipErrordivconnecting">
+		<div id="ipErrordivconnecting_box">
+			<p id="iperrorconnecting_p"></p>
+			<div class="ipErrordiv_connecting_img"></div>
+			<div id="cancelIpConnect">取消</div>
+		</div>
+	</div>
+</body>
+
+<script src='js\index-2.js'></script>
+
+</html>
